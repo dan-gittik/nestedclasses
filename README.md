@@ -26,7 +26,7 @@ class config:
         path = os.path.join(root, 'log.txt')
 ```
 
-Turns out that for some obscure reason, scoping doesn't work the way you'd expect it to when it comes to class bodies:
+Turns out that for some obscure reason, scoping doesn't work the way you'd expect it to when it comes to classes:
 this code ``NameError``s with ``name 'root' is not defined``. Unless...
 
 ```python
